@@ -1,6 +1,6 @@
 import Globe from 'globe.gl';
 
-fetch('/world.geojson')
+fetch('world.geojson')
   .then(res => res.json())
   .then(geoJson => {
     const features = geoJson.features;
@@ -95,3 +95,4 @@ fetch('/world.geojson')
       }
     });
   });
+
